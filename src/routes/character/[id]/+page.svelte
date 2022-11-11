@@ -2,7 +2,7 @@
 	import type { PageData } from './$houdini';
 
 	export let data: PageData;
-	
+
 	$: ({ CharacterQuery } = data);
 	$: character = $CharacterQuery?.data?.character;
 </script>
@@ -18,8 +18,8 @@
 	</p>
 	Appeared in :
 	<ul>
-		{#each character?.episode as ep}
-			<li>{ep.name}</li>
+		{#each character?.episode ?? [] as ep}
+			<li>{ep?.name}</li>
 		{/each}
 	</ul>
 </section>
