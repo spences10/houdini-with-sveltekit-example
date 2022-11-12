@@ -18,7 +18,7 @@
 	</p>
 	Appeared in :
 	<ul>
-		{#each character?.episode ?? [] as ep}
+		{#each character?.episode || [] as ep}
 			<li>{ep?.name}</li>
 		{/each}
 	</ul>
