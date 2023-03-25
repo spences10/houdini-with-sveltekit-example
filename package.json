@@ -30,7 +30,7 @@
 		"typescript": "^4.8.4",
 		"vite": "^3.2.3",
 		"houdini": "^0.17.6",
-		"houdini-svelte": "^0.17.6",
+		"houdini-svelte": "^1.0.0",
 		"graphql": "^16.0.0"
 	},
 	"type": "module"
