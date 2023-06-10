@@ -1,23 +1,15 @@
-import { HoudiniClient, type RequestHandlerArgs } from '$houdini';
+import { HoudiniClient } from '$houdini'
 
-async function fetchQuery({
-	fetch,
-	text = '',
-	variables = {},
-	metadata
-}: RequestHandlerArgs) {
-	const url = 'https://rickandmortyapi.com/graphql/';
-	const result = await fetch(url, {
-		method: 'POST',
-		headers: {
-			'Content-Type': 'application/json'
-		},
-		body: JSON.stringify({
-			query: text,
-			variables
-		})
-	});
-	return await result.json();
-}
+export default new HoudiniClient({
+	url: 'https://rickandmortyapi.com/graphql/',
 
-export default new HoudiniClient(fetchQuery);
+	// uncomment this to configure the network call (for things like authentication)
+	// for more information, please visit here: https://www.houdinigraphql.com/guides/authentication
+	// fetchParams({ session }) {
+	//     return {
+	//         headers: {
+	//             Authentication: `Bearer ${session.token}`,
+	//         }
+	//     }
+	// }
+})

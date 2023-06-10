@@ -1,11 +1,13 @@
+/// <references types="houdini-svelte">
+
 /** @type {import('houdini').ConfigFile} */
 const config = {
-	apiUrl: 'https://rickandmortyapi.com/graphql/',
+	watchSchema: {
+		url: 'https://rickandmortyapi.com/graphql/',
+	},
 	plugins: {
-		'houdini-svelte': {
-			client: './src/client'
-		}
-	}
-};
+		'houdini-svelte': {},
+	},
+}
 
-export default config;
+export default config

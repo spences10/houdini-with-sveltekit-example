@@ -1,8 +1,7 @@
-import { load_AllCharacters } from '$houdini';
-import type { LayoutLoad } from './$types';
+import { load_AllCharacters } from '$houdini'
 
-export const load: LayoutLoad = async (event) => {
+export const load = async (event) => {
 	return {
-		...(await load_AllCharacters({ event }))
-	};
-};
+		...(await load_AllCharacters({ event })),
+	}
+}
