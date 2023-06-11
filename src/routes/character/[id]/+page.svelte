@@ -6,8 +6,8 @@
 	$: character = $CharacterQuery?.data?.character
 </script>
 
-<section>
-	<img src={character?.image} alt={character?.name} />
+<section class="prose">
+	<img src={character?.image} alt={character?.name} class="rounded-box" />
 	<h2>{character?.name}</h2>
 	<p>Status: {character?.status}</p>
 	<p>Species: {character?.species}</p>
