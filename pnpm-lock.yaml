@@ -43,7 +43,7 @@ devDependencies:
     version: 9.1.0(eslint@9.0.0)
   eslint-plugin-svelte:
     specifier: ^2.36.0-next.4
-    version: 2.36.0(eslint@9.0.0)(svelte@5.0.0-next.96)
+    version: 2.37.0(eslint@9.0.0)(svelte@5.0.0-next.96)
   houdini:
     specifier: ^1.2.46
     version: 1.2.46
@@ -1893,8 +1893,8 @@ packages:
       eslint: 9.0.0
     dev: true
 
-  /eslint-plugin-svelte@2.36.0(eslint@9.0.0)(svelte@5.0.0-next.96):
-    resolution: {integrity: sha512-D30hSj13Y8YEn7yGXos7EYp0lpEb3Z2V/M+6a3MZ13KGVhaefdW2A9j8IBIcW4YR+j6fo901USzLeXQz/XbWeQ==}
+  /eslint-plugin-svelte@2.37.0(eslint@9.0.0)(svelte@5.0.0-next.96):
+    resolution: {integrity: sha512-H/2Gz7agYHEMEEzRuLYuCmAIdjuBnbhFG9hOK0yCdSBvvJGJMkjo+lR6j67OIvLOavgp4L7zA5LnDKi8WqdPhQ==}
     engines: {node: ^14.17.0 || >=16.0.0}
     peerDependencies:
       eslint: ^7.0.0 || ^8.0.0-0 || ^9.0.0-0
