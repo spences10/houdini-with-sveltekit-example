@@ -52,7 +52,7 @@ importers:
         version: 1.2.46
       houdini-svelte:
         specifier: ^1.2.46
-        version: 1.2.46(@types/node@20.12.2)
+        version: 1.2.47(@types/node@20.12.2)
       postcss:
         specifier: ^8.4.38
         version: 8.4.38
@@ -114,6 +114,11 @@ packages:
 
   '@babel/parser@7.24.1':
     resolution: {integrity: sha512-Zo9c7N3xdOIQrNip7Lc9wvRPzlRtovHVE4lkz8WEDr7uYh/GMQhSiIgFxGIArRHYdJE5kxtZjAf8rT0xhdLCzg==}
+    engines: {node: '>=6.0.0'}
+    hasBin: true
+
+  '@babel/parser@7.24.4':
+    resolution: {integrity: sha512-zTvEBcghmeBma9QIGunWevvBAp4/Qu9Bdq+2k0Ot4fVMD6v3dsC9WOcRSKk7tRRyBM/53yKMJko9xOatGQAwSg==}
     engines: {node: '>=6.0.0'}
     hasBin: true
 
@@ -724,6 +729,9 @@ packages:
   '@types/micromatch@4.0.6':
     resolution: {integrity: sha512-2eulCHWqjEpk9/vyic4tBhI8a9qQEl6DaK2n/sF7TweX9YESlypgKyhXMDGt4DAOy/jhLPvVrZc8pTDAMsplJA==}
 
+  '@types/micromatch@4.0.7':
+    resolution: {integrity: sha512-C/FMQ8HJAZhTsDpl4wDKZdMeeW5USjgzOczUwTGbRc1ZopPgOhIEnxY2ZgUrsuyy4DwK1JVOJZKFakv3TbCKiA==}
+
   '@types/node@20.12.2':
     resolution: {integrity: sha512-zQ0NYO87hyN6Xrclcqp7f8ZbXNbRfoGWNcMvHTPQp9UUrwI0mI7XBz+cu7/W6/VClYo2g63B0cjull/srU7LgQ==}
 
@@ -823,6 +831,10 @@ packages:
 
   '@whatwg-node/server@0.9.32':
     resolution: {integrity: sha512-PRTRE8ZhObwYx9yRoUdxYkrhCoDk2vyDA5BtaG+NAqEmU1wwbwlXUpaeRRrPuGaM7ScbIkueU25A0GJIRQzccw==}
+    engines: {node: '>=16.0.0'}
+
+  '@whatwg-node/server@0.9.33':
+    resolution: {integrity: sha512-bHWZi6YhVsDKAzjlPn5EN7u5j7SvHqDI6Acr37hgMBjKyCzqHivfPFgC/sRZ6LLxM9pJNsXpFoAF1kySXhAn6w==}
     engines: {node: '>=16.0.0'}
 
   acorn-jsx@5.3.2:
@@ -1053,6 +1065,9 @@ packages:
 
   devalue@4.3.2:
     resolution: {integrity: sha512-KqFl6pOgOW+Y6wJgu80rHpo2/3H07vr8ntR9rkkFIRETewbf5GaYYcakYfiKz89K+sLsuPkQIZaXDMjUObZwWg==}
+
+  devalue@4.3.3:
+    resolution: {integrity: sha512-UH8EL6H2ifcY8TbD2QsxwCC/pr5xSwPvv85LrLXVihmHVC3T3YqTCIwnR5ak0yO1KYqlxrPVOA/JVZJYPy2ATg==}
 
   didyoumean@1.2.2:
     resolution: {integrity: sha512-gxtyfqMg7GKyhQmb056K7M3xszy/myH8w+B4RT+QXBQsvAOdc3XymqDDPHx1BgPgsdAA5SIifona89YtRATDzw==}
@@ -1345,11 +1360,15 @@ packages:
     resolution: {integrity: sha512-0hJU9SCPvmMzIBdZFqNPXWa6dqh7WdH0cII9y+CyS8rG3nL48Bclra9HmKhVVUHyPWNH5Y7xDwAB7bfgSjkUMQ==}
     engines: {node: '>= 0.4'}
 
-  houdini-svelte@1.2.46:
-    resolution: {integrity: sha512-jUv9orXqgWwU4E8UH8+uWd3qUqpX27OZset2/hJKIaRoaelCG+S+RH0Amsl3BujaFSRePlJn7DBRFnXqEA6o+g==}
+  houdini-svelte@1.2.47:
+    resolution: {integrity: sha512-BEqXM1bgu1WjOF5jg0wml6a6WXu1m8zzh1Ld+SvLmHdvK5xZYWdXGkIIXeC/dQTvXHTDoxgxMHtsLEyzzakZEQ==}
 
   houdini@1.2.46:
     resolution: {integrity: sha512-9LOF53lH2+rpStaIUnKJSwEsjkCbMo7a0Yyo6SanEZQ/dlpEFmbvfwhVmJmsR078AeF1CxunDiANe2frn82Wlw==}
+    hasBin: true
+
+  houdini@1.2.47:
+    resolution: {integrity: sha512-GtOGv1UEclUSmxaN1YsYWlT/BGN+Y8ZgJq30D3C3bO/s8hA8A7JRjt8ryxKfugaHCFyEVswVstu6AhXWDqd7SQ==}
     hasBin: true
 
   human-signals@3.0.1:
@@ -2118,8 +2137,8 @@ packages:
   undici-types@5.26.5:
     resolution: {integrity: sha512-JlCMO+ehdEIKqlFxk6IfVoAUVmgz7cU7zD/h9XZ0qzeosSHmUJVOzSQvvYSYWXkFXC+IfLKSIffhv0sVZup6pA==}
 
-  undici@5.28.3:
-    resolution: {integrity: sha512-3ItfzbrhDlINjaP0duwnNsKpDQk3acHI3gVJ1z4fmwMK31k5G9OVIAMLSIaP6w4FaGkaAkN6zaQO9LUvZ1t7VA==}
+  undici@5.28.4:
+    resolution: {integrity: sha512-72RFADWFqKmUb2hmmvNODKL3p9hcB6Gt2DOQMis1SEBaV6a4MH8soBvzg+95CYhCKPFedut2JY9bMfrDl9D23g==}
     engines: {node: '>=14.0'}
 
   universalify@2.0.1:
@@ -2311,6 +2330,10 @@ snapshots:
   '@babel/helper-validator-identifier@7.22.20': {}
 
   '@babel/parser@7.24.1':
+    dependencies:
+      '@babel/types': 7.24.0
+
+  '@babel/parser@7.24.4':
     dependencies:
       '@babel/types': 7.24.0
 
@@ -2704,7 +2727,7 @@ snapshots:
       '@sveltejs/vite-plugin-svelte': 2.5.3(svelte@3.59.2)(vite@4.5.3(@types/node@20.12.2))
       '@types/cookie': 0.5.4
       cookie: 0.5.0
-      devalue: 4.3.2
+      devalue: 4.3.3
       esm-env: 1.0.0
       kleur: 4.1.5
       magic-string: 0.30.10
@@ -2714,7 +2737,7 @@ snapshots:
       sirv: 2.0.4
       svelte: 3.59.2
       tiny-glob: 0.2.9
-      undici: 5.28.3
+      undici: 5.28.4
       vite: 4.5.3(@types/node@20.12.2)
     transitivePeerDependencies:
       - supports-color
@@ -2811,6 +2834,10 @@ snapshots:
   '@types/json-schema@7.0.15': {}
 
   '@types/micromatch@4.0.6':
+    dependencies:
+      '@types/braces': 3.0.4
+
+  '@types/micromatch@4.0.7':
     dependencies:
       '@types/braces': 3.0.4
 
@@ -2955,6 +2982,11 @@ snapshots:
       tslib: 2.6.2
 
   '@whatwg-node/server@0.9.32':
+    dependencies:
+      '@whatwg-node/fetch': 0.9.17
+      tslib: 2.6.2
+
+  '@whatwg-node/server@0.9.33':
     dependencies:
       '@whatwg-node/fetch': 0.9.17
       tslib: 2.6.2
@@ -3165,6 +3197,8 @@ snapshots:
   detect-indent@6.1.0: {}
 
   devalue@4.3.2: {}
+
+  devalue@4.3.3: {}
 
   didyoumean@1.2.2: {}
 
@@ -3548,14 +3582,14 @@ snapshots:
     dependencies:
       function-bind: 1.1.2
 
-  houdini-svelte@1.2.46(@types/node@20.12.2):
+  houdini-svelte@1.2.47(@types/node@20.12.2):
     dependencies:
       '@kitql/helpers': 0.8.9
       '@sveltejs/kit': 1.30.4(svelte@3.59.2)(vite@4.5.3(@types/node@20.12.2))
       ast-types: 0.16.1
       estree-walker: 3.0.3
       graphql: 15.8.0
-      houdini: 1.2.46
+      houdini: 1.2.47
       recast: 0.23.6
       rollup: 3.29.4
       svelte: 3.59.2
@@ -3582,6 +3616,34 @@ snapshots:
       '@types/micromatch': 4.0.6
       '@ungap/structured-clone': 1.2.0
       '@whatwg-node/server': 0.9.32
+      ast-types: 0.16.1
+      commander: 9.5.0
+      deepmerge: 4.3.1
+      estree-walker: 3.0.3
+      fs-extra: 10.1.0
+      glob: 8.1.0
+      graphql: 15.8.0
+      graphql-yoga: 4.0.5(graphql@15.8.0)
+      memfs: 3.5.3
+      micromatch: 4.0.5
+      minimatch: 5.1.6
+      node-fetch: 3.3.2
+      npx-import: 1.1.4
+      recast: 0.23.6
+      vite-plugin-watch-and-run: 1.7.0
+
+  houdini@1.2.47:
+    dependencies:
+      '@babel/parser': 7.24.4
+      '@clack/prompts': 0.6.3
+      '@graphql-tools/merge': 9.0.3(graphql@15.8.0)
+      '@graphql-tools/schema': 9.0.19(graphql@15.8.0)
+      '@kitql/helpers': 0.8.9
+      '@types/estree': 1.0.5
+      '@types/fs-extra': 9.0.13
+      '@types/micromatch': 4.0.7
+      '@ungap/structured-clone': 1.2.0
+      '@whatwg-node/server': 0.9.33
       ast-types: 0.16.1
       commander: 9.5.0
       deepmerge: 4.3.1
@@ -4300,7 +4362,7 @@ snapshots:
 
   undici-types@5.26.5: {}
 
-  undici@5.28.3:
+  undici@5.28.4:
     dependencies:
       '@fastify/busboy': 2.1.1
 
