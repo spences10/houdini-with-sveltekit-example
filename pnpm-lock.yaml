@@ -42,8 +42,8 @@ devDependencies:
     specifier: ^9.1.0
     version: 9.1.0(eslint@9.4.0)
   eslint-plugin-svelte:
-    specifier: ^2.39.0
-    version: 2.39.0(eslint@9.4.0)(svelte@5.0.0-next.151)
+    specifier: ^2.39.2
+    version: 2.39.2(eslint@9.4.0)(svelte@5.0.0-next.151)
   houdini:
     specifier: ^1.2.47
     version: 1.2.47
@@ -57,11 +57,11 @@ devDependencies:
     specifier: ^6.0.1
     version: 6.0.1(postcss@8.4.38)
   prettier:
-    specifier: ^3.3.0
-    version: 3.3.0
+    specifier: ^3.3.1
+    version: 3.3.1
   prettier-plugin-svelte:
-    specifier: ^3.2.3
-    version: 3.2.3(prettier@3.3.0)(svelte@5.0.0-next.151)
+    specifier: ^3.2.4
+    version: 3.2.4(prettier@3.3.1)(svelte@5.0.0-next.151)
   svelte:
     specifier: ^5.0.0-next.1
     version: 5.0.0-next.151
@@ -72,7 +72,7 @@ devDependencies:
     specifier: ^5.1.4
     version: 5.1.4(postcss-load-config@6.0.1)(postcss@8.4.38)(svelte@5.0.0-next.151)(typescript@5.4.5)
   tailwindcss:
-    specifier: ^3.4.3
+    specifier: ^3.4.4
     version: 3.4.4
   tslib:
     specifier: ^2.6.3
@@ -81,7 +81,7 @@ devDependencies:
     specifier: ^5.4.5
     version: 5.4.5
   vite:
-    specifier: ^5.2.12
+    specifier: ^5.2.13
     version: 5.2.13
   vitest:
     specifier: ^1.6.0
@@ -1913,8 +1913,8 @@ packages:
       eslint: 9.4.0
     dev: true
 
-  /eslint-plugin-svelte@2.39.0(eslint@9.4.0)(svelte@5.0.0-next.151):
-    resolution: {integrity: sha512-FXktBLXsrxbA+6ZvJK2z/sQOrUKyzSg3fNWK5h0reSCjr2fjAsc9ai/s/JvSl4Hgvz3nYVtTIMwarZH5RcB7BA==}
+  /eslint-plugin-svelte@2.39.2(eslint@9.4.0)(svelte@5.0.0-next.151):
+    resolution: {integrity: sha512-liJMHhWnNqnimPpw0lSKiG/fQXla+ySp0NjXirB6l9A9LrBY2AjUfL0HMKkBEil5PaFn5F2rp6EqW85NDjRdSA==}
     engines: {node: ^14.17.0 || >=16.0.0}
     peerDependencies:
       eslint: ^7.0.0 || ^8.0.0-0 || ^9.0.0-0
@@ -1925,7 +1925,6 @@ packages:
     dependencies:
       '@eslint-community/eslint-utils': 4.4.0(eslint@9.4.0)
       '@jridgewell/sourcemap-codec': 1.4.15
-      debug: 4.3.5
       eslint: 9.4.0
       eslint-compat-utils: 0.5.0(eslint@9.4.0)
       esutils: 2.0.3
@@ -1933,12 +1932,11 @@ packages:
       postcss: 8.4.38
       postcss-load-config: 3.1.4(postcss@8.4.38)
       postcss-safe-parser: 6.0.0(postcss@8.4.38)
-      postcss-selector-parser: 6.0.16
+      postcss-selector-parser: 6.1.0
       semver: 7.6.2
       svelte: 5.0.0-next.151
       svelte-eslint-parser: 0.36.0(svelte@5.0.0-next.151)
     transitivePeerDependencies:
-      - supports-color
       - ts-node
     dev: true
 
@@ -3116,14 +3114,6 @@ packages:
       util-deprecate: 1.0.2
     dev: true
 
-  /postcss-selector-parser@6.0.16:
-    resolution: {integrity: sha512-A0RVJrX+IUkVZbW3ClroRWurercFhieevHB38sr2+l9eUClMqome3LmEmnhlNy+5Mr2EYN6B2Kaw9wYdd+VHiw==}
-    engines: {node: '>=4'}
-    dependencies:
-      cssesc: 3.0.0
-      util-deprecate: 1.0.2
-    dev: true
-
   /postcss-selector-parser@6.1.0:
     resolution: {integrity: sha512-UMz42UD0UY0EApS0ZL9o1XnLhSTtvvvLe5Dc2H2O56fvRZi+KulDyf5ctDhhtYJBGKStV2FL1fy6253cmLgqVQ==}
     engines: {node: '>=4'}
@@ -3150,18 +3140,18 @@ packages:
     engines: {node: '>= 0.8.0'}
     dev: true
 
-  /prettier-plugin-svelte@3.2.3(prettier@3.3.0)(svelte@5.0.0-next.151):
-    resolution: {integrity: sha512-wJq8RunyFlWco6U0WJV5wNCM7zpBFakS76UBSbmzMGpncpK98NZABaE+s7n8/APDCEVNHXC5Mpq+MLebQtsRlg==}
+  /prettier-plugin-svelte@3.2.4(prettier@3.3.1)(svelte@5.0.0-next.151):
+    resolution: {integrity: sha512-tZv+ADfeOWFNQkXkRh6zUXE16w3Vla8x2Ug0B/EnSmjR4EnwdwZbGgL/liSwR1kcEALU5mAAyua98HBxheCxgg==}
     peerDependencies:
       prettier: ^3.0.0
       svelte: ^3.2.0 || ^4.0.0-next.0 || ^5.0.0-next.0
     dependencies:
-      prettier: 3.3.0
+      prettier: 3.3.1
       svelte: 5.0.0-next.151
     dev: true
 
-  /prettier@3.3.0:
-    resolution: {integrity: sha512-J9odKxERhCQ10OC2yb93583f6UnYutOeiV5i0zEDS7UGTdUt0u+y8erxl3lBKvwo/JHyyoEdXjwp4dke9oyZ/g==}
+  /prettier@3.3.1:
+    resolution: {integrity: sha512-7CAwy5dRsxs8PHXT3twixW9/OEll8MLE0VRPCJyl7CkS6VHGPSlsVaWTiASPTyGyYRyApxlaWTzwUxVNrhcwDg==}
     engines: {node: '>=14'}
     hasBin: true
     dev: true
