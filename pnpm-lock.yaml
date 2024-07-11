@@ -46,7 +46,7 @@ devDependencies:
     version: 2.41.0(eslint@9.6.0)(svelte@5.0.0-next.175)
   houdini:
     specifier: ^1.2.47
-    version: 1.2.48
+    version: 1.2.49
   houdini-svelte:
     specifier: ^1.2.47
     version: 1.2.48
@@ -102,8 +102,8 @@ packages:
       '@jridgewell/trace-mapping': 0.3.25
     dev: true
 
-  /@babel/helper-string-parser@7.24.7:
-    resolution: {integrity: sha512-7MbVt6xrwFQbunH2DNQsAP5sTGxfqQtErvBIvIMi6EQnbgUOuVYanvREcmFrOPhoXBrTtjhhP+lW+o5UfK+tDg==}
+  /@babel/helper-string-parser@7.24.8:
+    resolution: {integrity: sha512-pO9KhhRcuUyGnJWwyEgnRJTSIZHiT+vMD0kPeD+so0l7mxkMT19g3pjY9GTnHySck/hDzq+dtW/4VgnMkippsQ==}
     engines: {node: '>=6.9.0'}
     dev: true
 
@@ -112,19 +112,19 @@ packages:
     engines: {node: '>=6.9.0'}
     dev: true
 
-  /@babel/parser@7.24.7:
-    resolution: {integrity: sha512-9uUYRm6OqQrCqQdG1iCBwBPZgN8ciDBro2nIOFaiRz1/BCxaI7CNvQbDHvsArAC7Tw9Hda/B3U+6ui9u4HWXPw==}
+  /@babel/parser@7.24.8:
+    resolution: {integrity: sha512-WzfbgXOkGzZiXXCqk43kKwZjzwx4oulxZi3nq2TYL9mOjQv6kYwul9mz6ID36njuL7Xkp6nJEfok848Zj10j/w==}
     engines: {node: '>=6.0.0'}
     hasBin: true
     dependencies:
-      '@babel/types': 7.24.7
+      '@babel/types': 7.24.8
     dev: true
 
-  /@babel/types@7.24.7:
-    resolution: {integrity: sha512-XEFXSlxiG5td2EJRe8vOmRbaXVgfcBlszKujvVmWIK/UpywWljQCfzAv3RQCGujWQ1RD4YYWEAqDXfuJiy8f5Q==}
+  /@babel/types@7.24.8:
+    resolution: {integrity: sha512-SkSBEHwwJRU52QEVZBmMBnE5Ux2/6WU1grdYyOhpbCNxbmJrDuDCphBzKZSO3taf0zztp+qkWlymE5tVL5l0TA==}
     engines: {node: '>=6.9.0'}
     dependencies:
-      '@babel/helper-string-parser': 7.24.7
+      '@babel/helper-string-parser': 7.24.8
       '@babel/helper-validator-identifier': 7.24.7
       to-fast-properties: 2.0.0
     dev: true
@@ -2352,7 +2352,7 @@ packages:
       ast-types: 0.16.1
       estree-walker: 3.0.3
       graphql: 15.9.0
-      houdini: 1.2.48
+      houdini: 1.2.49
       recast: 0.23.9
       rollup: 3.29.4
       svelte: 3.59.2
@@ -2368,11 +2368,11 @@ packages:
       - terser
     dev: true
 
-  /houdini@1.2.48:
-    resolution: {integrity: sha512-RTj0yY3IB+qHgfV5UX1IymRvkmaB/TWe+PxelL8Zn6uuGlZ0kQOdtR/pDZZoo3M/XYqjr6mGbei5fxExAywumg==}
+  /houdini@1.2.49:
+    resolution: {integrity: sha512-FpqPPDu3fl+0j5XoQyNae29kSpmTI9iYlCeI0rKM8MofWcp50j/IIGP4h4wF/WY3TtJzIf6pqfbOGXMK35Sldg==}
     hasBin: true
     dependencies:
-      '@babel/parser': 7.24.7
+      '@babel/parser': 7.24.8
       '@clack/prompts': 0.6.3
       '@graphql-tools/merge': 9.0.4(graphql@15.9.0)
       '@graphql-tools/schema': 9.0.19(graphql@15.9.0)
