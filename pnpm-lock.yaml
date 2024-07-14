@@ -46,7 +46,7 @@ devDependencies:
     version: 2.42.0(eslint@9.6.0)(svelte@5.0.0-next.175)
   houdini:
     specifier: ^1.2.47
-    version: 1.2.49
+    version: 1.2.50
   houdini-svelte:
     specifier: ^1.2.47
     version: 1.2.48
@@ -630,7 +630,7 @@ packages:
     peerDependencies:
       graphql: ^14.0.0 || ^15.0.0 || ^16.0.0 || ^17.0.0
     dependencies:
-      '@graphql-tools/utils': 10.3.1(graphql@15.9.0)
+      '@graphql-tools/utils': 10.3.2(graphql@15.9.0)
       '@graphql-typed-document-node/core': 3.2.0(graphql@15.9.0)
       '@repeaterjs/repeater': 3.0.6
       graphql: 15.9.0
@@ -654,7 +654,7 @@ packages:
     peerDependencies:
       graphql: ^14.0.0 || ^15.0.0 || ^16.0.0 || ^17.0.0
     dependencies:
-      '@graphql-tools/utils': 10.3.1(graphql@15.9.0)
+      '@graphql-tools/utils': 10.3.2(graphql@15.9.0)
       graphql: 15.9.0
       tslib: 2.6.3
     dev: true
@@ -666,7 +666,7 @@ packages:
       graphql: ^14.0.0 || ^15.0.0 || ^16.0.0 || ^17.0.0
     dependencies:
       '@graphql-tools/merge': 9.0.4(graphql@15.9.0)
-      '@graphql-tools/utils': 10.3.1(graphql@15.9.0)
+      '@graphql-tools/utils': 10.3.2(graphql@15.9.0)
       graphql: 15.9.0
       tslib: 2.6.3
       value-or-promise: 1.0.12
@@ -684,8 +684,8 @@ packages:
       value-or-promise: 1.0.12
     dev: true
 
-  /@graphql-tools/utils@10.3.1(graphql@15.9.0):
-    resolution: {integrity: sha512-Yhk1F0MNk4/ctgl3d0DKq++ZPovvZuh1ixWuUEVAxrFloYOAVwJ+rvGI1lsopArdJly8QXClT9lkvOxQszMw/w==}
+  /@graphql-tools/utils@10.3.2(graphql@15.9.0):
+    resolution: {integrity: sha512-iaqOHS4f90KNADBHqVsRBjKpM6iSvsUg1q5GhWMK03loYLaDzftrEwcsl0OkSSnRhJvAsT7q4q3r3YzRoV0v1g==}
     engines: {node: '>=16.0.0'}
     peerDependencies:
       graphql: ^14.0.0 || ^15.0.0 || ^16.0.0 || ^17.0.0
@@ -2316,7 +2316,7 @@ packages:
       '@envelop/core': 4.0.3
       '@graphql-tools/executor': 1.2.8(graphql@15.9.0)
       '@graphql-tools/schema': 10.0.4(graphql@15.9.0)
-      '@graphql-tools/utils': 10.3.1(graphql@15.9.0)
+      '@graphql-tools/utils': 10.3.2(graphql@15.9.0)
       '@graphql-yoga/logger': 1.0.0
       '@graphql-yoga/subscription': 4.0.0
       '@whatwg-node/fetch': 0.9.18
@@ -2352,7 +2352,7 @@ packages:
       ast-types: 0.16.1
       estree-walker: 3.0.3
       graphql: 15.9.0
-      houdini: 1.2.49
+      houdini: 1.2.50
       recast: 0.23.9
       rollup: 3.29.4
       svelte: 3.59.2
@@ -2368,8 +2368,8 @@ packages:
       - terser
     dev: true
 
-  /houdini@1.2.49:
-    resolution: {integrity: sha512-FpqPPDu3fl+0j5XoQyNae29kSpmTI9iYlCeI0rKM8MofWcp50j/IIGP4h4wF/WY3TtJzIf6pqfbOGXMK35Sldg==}
+  /houdini@1.2.50:
+    resolution: {integrity: sha512-1M2/THzSHvdNXA6jtCxOucsM6uXHsDvd0Wrm4L/eJYyo1WR9MIFr0JYTzhW5JceDc9/taYrTA4wwcSxuPP0nTA==}
     hasBin: true
     dependencies:
       '@babel/parser': 7.24.8
