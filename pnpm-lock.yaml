@@ -52,7 +52,7 @@ importers:
         version: 1.2.51
       houdini-svelte:
         specifier: ^1.2.47
-        version: 1.2.50(@types/node@22.0.0)
+        version: 1.2.52(@types/node@22.0.0)
       postcss:
         specifier: ^8.4.38
         version: 8.4.40
@@ -110,6 +110,11 @@ packages:
 
   '@babel/parser@7.25.0':
     resolution: {integrity: sha512-CzdIU9jdP0dg7HdyB+bHvDJGagUv+qtzZt5rYCWwW6tITNqV9odjp6Qu41gkG0ca5UfdDUWrKkiAnHHdGRnOrA==}
+    engines: {node: '>=6.0.0'}
+    hasBin: true
+
+  '@babel/parser@7.25.3':
+    resolution: {integrity: sha512-iLTJKDbJ4hMvFPgQwwsVoxtHyWpKKPBrxkANrSYewDPaPpT5py5yeVkgPIJ7XYXhndxJpaA3PyALSXQ7u8e/Dw==}
     engines: {node: '>=6.0.0'}
     hasBin: true
 
@@ -814,6 +819,10 @@ packages:
     resolution: {integrity: sha512-FBDf8aeKZSwFyASKTFIAcNfZPV7jczVItfwimcGFai9pXUMLJC3efjkNMh1HqKzM4sUUkocX8p0kaFzlkqrt1Q==}
     engines: {node: '>=16.0.0'}
 
+  '@whatwg-node/server@0.9.46':
+    resolution: {integrity: sha512-vUKCMPP6f2BLtOxnK2c98QmK0rb24RlmXb2enbEg8nXttQLvlKfMOfaY7uNAtaMXejjR2ku/ww9EEeiWXV3Q9A==}
+    engines: {node: '>=18.0.0'}
+
   acorn-jsx@5.3.2:
     resolution: {integrity: sha512-rq9s+JNhf0IChjtDXxllJ7g41oZk5SlXtp0LHwyA5cejwn7vKmKp4pPri6YEePv2PU65sAsegbXtIinmDFDXgQ==}
     peerDependencies:
@@ -1007,6 +1016,15 @@ packages:
 
   debug@4.3.5:
     resolution: {integrity: sha512-pt0bNEmneDIvdL1Xsd9oDQ/wrQRkXDT4AUWlNZNPKvW5x/jyO9VFXkJUP07vQ2upmw5PlaITaPKc31jK13V+jg==}
+    engines: {node: '>=6.0'}
+    peerDependencies:
+      supports-color: '*'
+    peerDependenciesMeta:
+      supports-color:
+        optional: true
+
+  debug@4.3.6:
+    resolution: {integrity: sha512-O/09Bd4Z1fBrU4VzkhFqVgpPzaGbw6Sm9FEkBT1A/YBXQFGuuSxa1dN2nxgxS34JmKXqYx8CZAwEVoJFImUXIg==}
     engines: {node: '>=6.0'}
     peerDependencies:
       supports-color: '*'
@@ -1327,11 +1345,15 @@ packages:
     resolution: {integrity: sha512-0hJU9SCPvmMzIBdZFqNPXWa6dqh7WdH0cII9y+CyS8rG3nL48Bclra9HmKhVVUHyPWNH5Y7xDwAB7bfgSjkUMQ==}
     engines: {node: '>= 0.4'}
 
-  houdini-svelte@1.2.50:
-    resolution: {integrity: sha512-JIcHatC/3si+5KMBtv357VAUGtfZRuAeiF2rtt9hVsdmu6p7kOmvtiuUzXJGcODD0106lpeQwGjNXnvxOhSfTA==}
+  houdini-svelte@1.2.52:
+    resolution: {integrity: sha512-3GM410GksDNAAowM0MxgDzNcrZXnJrEgy2ITdr6pBNAc/bQk8ZFmeHNbbbuqUYUZYbFOf371uZEPkwOPzjvTbw==}
 
   houdini@1.2.51:
     resolution: {integrity: sha512-g8hAEf3QzqcHHf68KOyGDW1Mx5wuLTK2W+pEpLSdWtz62zdNLXRlBtsNPUaqvr+PUUZgAR/kxrDkxMfjlViLUg==}
+    hasBin: true
+
+  houdini@1.2.52:
+    resolution: {integrity: sha512-g3BXNx1VnijBuFLPyhzOcg5waf9GxwrFXIl2/jivLz2RP0B5gTG1FcQMGZqbNqcf7rKNHkqdOMxeg7t7QvubQw==}
     hasBin: true
 
   human-signals@3.0.1:
@@ -1840,6 +1862,9 @@ packages:
   set-cookie-parser@2.6.0:
     resolution: {integrity: sha512-RVnVQxTXuerk653XfuliOxBP81Sf0+qfQE73LIYKcyMYHG94AuH0kgrQpRDuTZnSmjpysHmzxJXKNfa6PjFhyQ==}
 
+  set-cookie-parser@2.7.0:
+    resolution: {integrity: sha512-lXLOiqpkUumhRdFF3k1osNXCy9akgx/dyPZ5p8qAg9seJzXr5ZrlqZuWIMuY6ejOsVLE6flJ5/h3lsn57fQ/PQ==}
+
   shebang-command@2.0.0:
     resolution: {integrity: sha512-kHxr2zZpYtdmrN1qDjrrX/Z1rR1kG8Dx+gkpK1G4eXmvXswmcE1hTWBWYUzlraYw1/yZp6YuDY77YtvbN0dmDA==}
     engines: {node: '>=8'}
@@ -2304,6 +2329,10 @@ snapshots:
     dependencies:
       '@babel/types': 7.25.2
 
+  '@babel/parser@7.25.3':
+    dependencies:
+      '@babel/types': 7.25.2
+
   '@babel/types@7.25.2':
     dependencies:
       '@babel/helper-string-parser': 7.24.8
@@ -2691,10 +2720,10 @@ snapshots:
       devalue: 4.3.3
       esm-env: 1.0.0
       kleur: 4.1.5
-      magic-string: 0.30.10
+      magic-string: 0.30.11
       mrmime: 1.0.1
       sade: 1.8.1
-      set-cookie-parser: 2.6.0
+      set-cookie-parser: 2.7.0
       sirv: 2.0.4
       svelte: 3.59.2
       tiny-glob: 0.2.9
@@ -2724,7 +2753,7 @@ snapshots:
   '@sveltejs/vite-plugin-svelte-inspector@1.0.4(@sveltejs/vite-plugin-svelte@2.5.3(svelte@3.59.2)(vite@4.5.3(@types/node@22.0.0)))(svelte@3.59.2)(vite@4.5.3(@types/node@22.0.0))':
     dependencies:
       '@sveltejs/vite-plugin-svelte': 2.5.3(svelte@3.59.2)(vite@4.5.3(@types/node@22.0.0))
-      debug: 4.3.5
+      debug: 4.3.6
       svelte: 3.59.2
       vite: 4.5.3(@types/node@22.0.0)
     transitivePeerDependencies:
@@ -2742,10 +2771,10 @@ snapshots:
   '@sveltejs/vite-plugin-svelte@2.5.3(svelte@3.59.2)(vite@4.5.3(@types/node@22.0.0))':
     dependencies:
       '@sveltejs/vite-plugin-svelte-inspector': 1.0.4(@sveltejs/vite-plugin-svelte@2.5.3(svelte@3.59.2)(vite@4.5.3(@types/node@22.0.0)))(svelte@3.59.2)(vite@4.5.3(@types/node@22.0.0))
-      debug: 4.3.5
+      debug: 4.3.6
       deepmerge: 4.3.1
       kleur: 4.1.5
-      magic-string: 0.30.10
+      magic-string: 0.30.11
       svelte: 3.59.2
       svelte-hmr: 0.15.3(svelte@3.59.2)
       vite: 4.5.3(@types/node@22.0.0)
@@ -2941,6 +2970,11 @@ snapshots:
       '@whatwg-node/fetch': 0.9.19
       tslib: 2.6.3
 
+  '@whatwg-node/server@0.9.46':
+    dependencies:
+      '@whatwg-node/fetch': 0.9.19
+      tslib: 2.6.3
+
   acorn-jsx@5.3.2(acorn@8.12.1):
     dependencies:
       acorn: 8.12.1
@@ -3119,6 +3153,10 @@ snapshots:
   data-uri-to-buffer@4.0.1: {}
 
   debug@4.3.5:
+    dependencies:
+      ms: 2.1.2
+
+  debug@4.3.6:
     dependencies:
       ms: 2.1.2
 
@@ -3515,14 +3553,14 @@ snapshots:
     dependencies:
       function-bind: 1.1.2
 
-  houdini-svelte@1.2.50(@types/node@22.0.0):
+  houdini-svelte@1.2.52(@types/node@22.0.0):
     dependencies:
       '@kitql/helpers': 0.8.9
       '@sveltejs/kit': 1.30.4(svelte@3.59.2)(vite@4.5.3(@types/node@22.0.0))
       ast-types: 0.16.1
       estree-walker: 3.0.3
       graphql: 15.9.0
-      houdini: 1.2.51
+      houdini: 1.2.52
       recast: 0.23.9
       rollup: 3.29.4
       svelte: 3.59.2
@@ -3549,6 +3587,34 @@ snapshots:
       '@types/micromatch': 4.0.9
       '@ungap/structured-clone': 1.2.0
       '@whatwg-node/server': 0.9.45
+      ast-types: 0.16.1
+      commander: 9.5.0
+      deepmerge: 4.3.1
+      estree-walker: 3.0.3
+      fs-extra: 10.1.0
+      glob: 8.1.0
+      graphql: 15.9.0
+      graphql-yoga: 4.0.5(graphql@15.9.0)
+      memfs: 3.5.3
+      micromatch: 4.0.7
+      minimatch: 5.1.6
+      node-fetch: 3.3.2
+      npx-import: 1.1.4
+      recast: 0.23.9
+      vite-plugin-watch-and-run: 1.7.0
+
+  houdini@1.2.52:
+    dependencies:
+      '@babel/parser': 7.25.3
+      '@clack/prompts': 0.6.3
+      '@graphql-tools/merge': 9.0.4(graphql@15.9.0)
+      '@graphql-tools/schema': 9.0.19(graphql@15.9.0)
+      '@kitql/helpers': 0.8.9
+      '@types/estree': 1.0.5
+      '@types/fs-extra': 9.0.13
+      '@types/micromatch': 4.0.9
+      '@ungap/structured-clone': 1.2.0
+      '@whatwg-node/server': 0.9.46
       ast-types: 0.16.1
       commander: 9.5.0
       deepmerge: 4.3.1
@@ -3995,6 +4061,8 @@ snapshots:
   semver@7.6.3: {}
 
   set-cookie-parser@2.6.0: {}
+
+  set-cookie-parser@2.7.0: {}
 
   shebang-command@2.0.0:
     dependencies:
