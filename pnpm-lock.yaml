@@ -52,7 +52,7 @@ importers:
         version: 1.2.51
       houdini-svelte:
         specifier: ^1.2.47
-        version: 1.2.52(@types/node@22.0.0)
+        version: 1.2.54(@types/node@22.0.0)
       postcss:
         specifier: ^8.4.38
         version: 8.4.41
@@ -1345,15 +1345,15 @@ packages:
     resolution: {integrity: sha512-0hJU9SCPvmMzIBdZFqNPXWa6dqh7WdH0cII9y+CyS8rG3nL48Bclra9HmKhVVUHyPWNH5Y7xDwAB7bfgSjkUMQ==}
     engines: {node: '>= 0.4'}
 
-  houdini-svelte@1.2.52:
-    resolution: {integrity: sha512-3GM410GksDNAAowM0MxgDzNcrZXnJrEgy2ITdr6pBNAc/bQk8ZFmeHNbbbuqUYUZYbFOf371uZEPkwOPzjvTbw==}
+  houdini-svelte@1.2.54:
+    resolution: {integrity: sha512-+kMCXlaWz2NSkE2z1HzE3byNI1VGRKCKJSn+0JTOpoQBU95kdp30ZH1QGZap+tkplRkld/7OS6EqC+jBCAiWBg==}
 
   houdini@1.2.51:
     resolution: {integrity: sha512-g8hAEf3QzqcHHf68KOyGDW1Mx5wuLTK2W+pEpLSdWtz62zdNLXRlBtsNPUaqvr+PUUZgAR/kxrDkxMfjlViLUg==}
     hasBin: true
 
-  houdini@1.2.52:
-    resolution: {integrity: sha512-g3BXNx1VnijBuFLPyhzOcg5waf9GxwrFXIl2/jivLz2RP0B5gTG1FcQMGZqbNqcf7rKNHkqdOMxeg7t7QvubQw==}
+  houdini@1.2.54:
+    resolution: {integrity: sha512-4162GdFb/nNpzQBQnpEP/Zn+4I2wUyXsjwPM0qamFKkkD656YU6kXM1MjqGY4d+USiOqLCXW+CXEVts7Rk+hYA==}
     hasBin: true
 
   human-signals@3.0.1:
@@ -3553,14 +3553,14 @@ snapshots:
     dependencies:
       function-bind: 1.1.2
 
-  houdini-svelte@1.2.52(@types/node@22.0.0):
+  houdini-svelte@1.2.54(@types/node@22.0.0):
     dependencies:
       '@kitql/helpers': 0.8.9
       '@sveltejs/kit': 1.30.4(svelte@3.59.2)(vite@4.5.3(@types/node@22.0.0))
       ast-types: 0.16.1
       estree-walker: 3.0.3
       graphql: 15.9.0
-      houdini: 1.2.52
+      houdini: 1.2.54
       recast: 0.23.9
       rollup: 3.29.4
       svelte: 3.59.2
@@ -3603,7 +3603,7 @@ snapshots:
       recast: 0.23.9
       vite-plugin-watch-and-run: 1.7.0
 
-  houdini@1.2.52:
+  houdini@1.2.54:
     dependencies:
       '@babel/parser': 7.25.3
       '@clack/prompts': 0.6.3
