@@ -49,7 +49,7 @@ devDependencies:
     version: 1.2.56
   houdini-svelte:
     specifier: ^1.2.56
-    version: 1.2.56
+    version: 1.2.57
   postcss:
     specifier: ^8.4.41
     version: 8.4.41
@@ -120,8 +120,25 @@ packages:
       '@babel/types': 7.25.2
     dev: true
 
+  /@babel/parser@7.25.6:
+    resolution: {integrity: sha512-trGdfBdbD0l1ZPmcJ83eNxB9rbEax4ALFTF7fN386TMYbeCQbyme5cOEXQhbGXKebwGaB/J52w1mrklMcbgy6Q==}
+    engines: {node: '>=6.0.0'}
+    hasBin: true
+    dependencies:
+      '@babel/types': 7.25.6
+    dev: true
+
   /@babel/types@7.25.2:
     resolution: {integrity: sha512-YTnYtra7W9e6/oAZEHj0bJehPRUlLH9/fbpT5LfB0NhQXyALCRkRs3zH9v07IYhkgpqX6Z78FnuccZr/l4Fs4Q==}
+    engines: {node: '>=6.9.0'}
+    dependencies:
+      '@babel/helper-string-parser': 7.24.8
+      '@babel/helper-validator-identifier': 7.24.7
+      to-fast-properties: 2.0.0
+    dev: true
+
+  /@babel/types@7.25.6:
+    resolution: {integrity: sha512-/l42B1qxpG6RdfYf343Uw1vmDjeNhneUXtzhojE7pDgfpEypmRhI6j1kr17XCVv4Cgl9HdAiQY2x0GwKm7rWCw==}
     engines: {node: '>=6.9.0'}
     dependencies:
       '@babel/helper-string-parser': 7.24.8
@@ -659,6 +676,17 @@ packages:
       tslib: 2.7.0
     dev: true
 
+  /@graphql-tools/merge@9.0.7(graphql@15.9.0):
+    resolution: {integrity: sha512-lbTrIuXIbUSmSumHkPRY1QX0Z8JEtmRhnIrkH7vkfeEmf0kNn/nCWvJwqokm5U7L+a+DA1wlRM4slIlbfXjJBA==}
+    engines: {node: '>=16.0.0'}
+    peerDependencies:
+      graphql: ^14.0.0 || ^15.0.0 || ^16.0.0 || ^17.0.0
+    dependencies:
+      '@graphql-tools/utils': 10.5.4(graphql@15.9.0)
+      graphql: 15.9.0
+      tslib: 2.7.0
+    dev: true
+
   /@graphql-tools/schema@10.0.6(graphql@15.9.0):
     resolution: {integrity: sha512-EIJgPRGzpvDFEjVp+RF1zNNYIC36BYuIeZ514jFoJnI6IdxyVyIRDLx/ykgMdaa1pKQerpfdqDnsF4JnZoDHSQ==}
     engines: {node: '>=16.0.0'}
@@ -798,6 +826,13 @@ packages:
 
   /@kamilkisiela/fast-url-parser@1.1.4:
     resolution: {integrity: sha512-gbkePEBupNydxCelHCESvFSFM8XPh1Zs/OAVRW/rKpEqPAl5PbOM90Si8mv9bvnR53uPD2s/FiRxdvSejpRJew==}
+    dev: true
+
+  /@kitql/helpers@0.8.10:
+    resolution: {integrity: sha512-r9m0eQyjy3Z2sdeXA8wRGl2tgKtZ9puPuZ3vm9Cv3WMMWVmbKVzUJvF+4UucsHzT9xECFbO9lcQu7lIb774PPQ==}
+    engines: {node: ^16.14 || >=18}
+    dependencies:
+      esm-env: 1.0.0
     dev: true
 
   /@kitql/helpers@0.8.9:
@@ -1006,11 +1041,11 @@ packages:
       magic-string: 0.30.11
       mrmime: 1.0.1
       sade: 1.8.1
-      set-cookie-parser: 2.6.0
+      set-cookie-parser: 2.7.0
       sirv: 2.0.4
       svelte: 3.59.2
       tiny-glob: 0.2.9
-      undici: 5.28.3
+      undici: 5.28.4
       vite: 4.5.3
     transitivePeerDependencies:
       - supports-color
@@ -1052,7 +1087,7 @@ packages:
       vite: ^4.0.0
     dependencies:
       '@sveltejs/vite-plugin-svelte': 2.5.3(svelte@3.59.2)(vite@4.5.3)
-      debug: 4.3.6
+      debug: 4.3.7
       svelte: 3.59.2
       vite: 4.5.3
     transitivePeerDependencies:
@@ -1083,7 +1118,7 @@ packages:
       vite: ^4.0.0
     dependencies:
       '@sveltejs/vite-plugin-svelte-inspector': 1.0.4(@sveltejs/vite-plugin-svelte@2.5.3)(svelte@3.59.2)(vite@4.5.3)
-      debug: 4.3.6
+      debug: 4.3.7
       deepmerge: 4.3.1
       kleur: 4.1.5
       magic-string: 0.30.11
@@ -1362,8 +1397,26 @@ packages:
       urlpattern-polyfill: 10.0.0
     dev: true
 
+  /@whatwg-node/fetch@0.9.21:
+    resolution: {integrity: sha512-Wt0jPb+04JjobK0pAAN7mEHxVHcGA9HoP3OyCsZtyAecNQeADXCZ1MihFwVwjsgaRYuGVmNlsCmLxlG6mor8Gw==}
+    engines: {node: '>=18.0.0'}
+    dependencies:
+      '@whatwg-node/node-fetch': 0.5.26
+      urlpattern-polyfill: 10.0.0
+    dev: true
+
   /@whatwg-node/node-fetch@0.5.22:
     resolution: {integrity: sha512-ccjjD+JCaylDGGcbJ69jFK2FaoGobpyOiDr2FnzSpcEss20MJzfJAiUIrpglWADplyB2AwfunMM7ph3IpPArhw==}
+    engines: {node: '>=18.0.0'}
+    dependencies:
+      '@kamilkisiela/fast-url-parser': 1.1.4
+      busboy: 1.6.0
+      fast-querystring: 1.1.2
+      tslib: 2.7.0
+    dev: true
+
+  /@whatwg-node/node-fetch@0.5.26:
+    resolution: {integrity: sha512-4jXDeZ4IH4bylZ6wu14VEx0aDXXhrN4TC279v9rPmn08g4EYekcYf8wdcOOnS9STjDkb6x77/6xBUTqxGgjr8g==}
     engines: {node: '>=18.0.0'}
     dependencies:
       '@kamilkisiela/fast-url-parser': 1.1.4
@@ -1377,6 +1430,14 @@ packages:
     engines: {node: '>=18.0.0'}
     dependencies:
       '@whatwg-node/fetch': 0.9.20
+      tslib: 2.7.0
+    dev: true
+
+  /@whatwg-node/server@0.9.49:
+    resolution: {integrity: sha512-3KzLXw80gWnTsQ746G/LFdCThTPfDodjQs4PnmoNuPa6XUOl4HWq8TlJpxtmnEEB+y+UYLal+3VQ68dtYlbUDQ==}
+    engines: {node: '>=18.0.0'}
+    dependencies:
+      '@whatwg-node/fetch': 0.9.21
       tslib: 2.7.0
     dev: true
 
@@ -1711,6 +1772,18 @@ packages:
         optional: true
     dependencies:
       ms: 2.1.2
+    dev: true
+
+  /debug@4.3.7:
+    resolution: {integrity: sha512-Er2nc/H7RrMXZBFCEim6TCmMk02Z8vLC2Rbi1KEBggpo0fS6l0S1nnapwmIi3yW/+GOJap1Krg4w0Hg80oCqgQ==}
+    engines: {node: '>=6.0'}
+    peerDependencies:
+      supports-color: '*'
+    peerDependenciesMeta:
+      supports-color:
+        optional: true
+    dependencies:
+      ms: 2.1.3
     dev: true
 
   /deep-eql@5.0.2:
@@ -2315,15 +2388,15 @@ packages:
       function-bind: 1.1.2
     dev: true
 
-  /houdini-svelte@1.2.56:
-    resolution: {integrity: sha512-t2eDPcMXstdTMv694KukZgmhJHy5WrB2dFZyVFMXaWHNT3ETtMFG99Mg0HXdxzSFzaiWXJnZIHneKdJ/bSZPaA==}
+  /houdini-svelte@1.2.57:
+    resolution: {integrity: sha512-yil5/7fzFjs61rZFbPecV5OOGWvZ1NM0zG36qghKe2eMP1qb15GHgbhKuUF8KhWMZKTgrklCOorrgdSLYBIEuA==}
     dependencies:
-      '@kitql/helpers': 0.8.9
+      '@kitql/helpers': 0.8.10
       '@sveltejs/kit': 1.30.4(svelte@3.59.2)(vite@4.5.3)
       ast-types: 0.16.1
       estree-walker: 3.0.3
       graphql: 15.9.0
-      houdini: 1.2.56
+      houdini: 1.2.57
       recast: 0.23.9
       rollup: 3.29.4
       svelte: 3.59.2
@@ -2368,6 +2441,37 @@ packages:
       npx-import: 1.1.4
       recast: 0.23.9
       vite-plugin-watch-and-run: 1.7.0
+    dev: true
+
+  /houdini@1.2.57:
+    resolution: {integrity: sha512-hv/5l9uppT7qpdO3FaRK1lkOPxsRUXiUzp/lwB6basf1apfdUNxEcTyGuCe9SVehWVZNetOVK5Pe6Z99Js2V2A==}
+    hasBin: true
+    dependencies:
+      '@babel/parser': 7.25.6
+      '@clack/prompts': 0.6.3
+      '@graphql-tools/merge': 9.0.7(graphql@15.9.0)
+      '@graphql-tools/schema': 9.0.19(graphql@15.9.0)
+      '@kitql/helpers': 0.8.10
+      '@types/estree': 1.0.5
+      '@types/fs-extra': 9.0.13
+      '@types/micromatch': 4.0.9
+      '@ungap/structured-clone': 1.2.0
+      '@whatwg-node/server': 0.9.49
+      ast-types: 0.16.1
+      commander: 9.5.0
+      deepmerge: 4.3.1
+      estree-walker: 3.0.3
+      fs-extra: 10.1.0
+      glob: 8.1.0
+      graphql: 15.9.0
+      graphql-yoga: 4.0.5(graphql@15.9.0)
+      memfs: 3.5.3
+      micromatch: 4.0.8
+      minimatch: 5.1.6
+      node-fetch: 3.3.2
+      npx-import: 1.1.4
+      recast: 0.23.9
+      vite-plugin-watch-and-run: 1.7.1
     dev: true
 
   /human-signals@3.0.1:
@@ -2624,6 +2728,14 @@ packages:
       picomatch: 2.3.1
     dev: true
 
+  /micromatch@4.0.8:
+    resolution: {integrity: sha512-PXwfBhYu0hBCPw8Dn0E+WDYb7af3dSLVWKi3HGv84IdF4TyFoC0ysxFd0Goxw7nSv4T/PzEJQxsYsEiFCKo2BA==}
+    engines: {node: '>=8.6'}
+    dependencies:
+      braces: 3.0.3
+      picomatch: 2.3.1
+    dev: true
+
   /mimic-fn@4.0.0:
     resolution: {integrity: sha512-vqiC06CuhBTUdZH+RYl8sFrL096vA45Ok5ISO6sE/Mr1jRbGH4Csnhi8f3wKVl7x8mO4Au7Ir9D3Oyv1VYMFJw==}
     engines: {node: '>=12'}
@@ -2671,6 +2783,10 @@ packages:
 
   /ms@2.1.2:
     resolution: {integrity: sha512-sGkPx+VjMtmA6MX27oA4FBFELFCZZ4S4XqeGOXCv68tT+jb3vk/RyaKWP0PTKyWtmLSM0b+adUTEvbs1PEaH2w==}
+    dev: true
+
+  /ms@2.1.3:
+    resolution: {integrity: sha512-6FlzubTLZG3J2a/NVCAleEhjzq5oxgHyaCU9yYXvcLsvoVaHJq/s5xXI6/XXP6tz7R9xAOtHnSO/tXtF3WRTlA==}
     dev: true
 
   /mz@2.7.0:
@@ -3141,6 +3257,10 @@ packages:
     resolution: {integrity: sha512-RVnVQxTXuerk653XfuliOxBP81Sf0+qfQE73LIYKcyMYHG94AuH0kgrQpRDuTZnSmjpysHmzxJXKNfa6PjFhyQ==}
     dev: true
 
+  /set-cookie-parser@2.7.0:
+    resolution: {integrity: sha512-lXLOiqpkUumhRdFF3k1osNXCy9akgx/dyPZ5p8qAg9seJzXr5ZrlqZuWIMuY6ejOsVLE6flJ5/h3lsn57fQ/PQ==}
+    dev: true
+
   /shebang-command@2.0.0:
     resolution: {integrity: sha512-kHxr2zZpYtdmrN1qDjrrX/Z1rR1kG8Dx+gkpK1G4eXmvXswmcE1hTWBWYUzlraYw1/yZp6YuDY77YtvbN0dmDA==}
     engines: {node: '>=8'}
@@ -3521,8 +3641,8 @@ packages:
     resolution: {integrity: sha512-5ruQbENj95yDYJNS3TvcaxPMshV7aizdv/hWYjGIKoANWKjhWNBsr2YEuYZKodQulB1b8l7ILOuDQep3afowQQ==}
     dev: true
 
-  /undici@5.28.3:
-    resolution: {integrity: sha512-3ItfzbrhDlINjaP0duwnNsKpDQk3acHI3gVJ1z4fmwMK31k5G9OVIAMLSIaP6w4FaGkaAkN6zaQO9LUvZ1t7VA==}
+  /undici@5.28.4:
+    resolution: {integrity: sha512-72RFADWFqKmUb2hmmvNODKL3p9hcB6Gt2DOQMis1SEBaV6a4MH8soBvzg+95CYhCKPFedut2JY9bMfrDl9D23g==}
     engines: {node: '>=14.0'}
     dependencies:
       '@fastify/busboy': 2.1.1
@@ -3598,6 +3718,14 @@ packages:
     dependencies:
       '@kitql/helpers': 0.8.9
       micromatch: 4.0.5
+    dev: true
+
+  /vite-plugin-watch-and-run@1.7.1:
+    resolution: {integrity: sha512-knLbovXBUwVrm0q4+LcpIhqTAZRoWVv5m8xRn42dy8hrF3rgJ7ucxm1d99KecED87NZI7v5oH3Pc2sPDcwJKEQ==}
+    engines: {node: ^16.14 || >=18}
+    dependencies:
+      '@kitql/helpers': 0.8.10
+      micromatch: 4.0.8
     dev: true
 
   /vite@4.5.3:
