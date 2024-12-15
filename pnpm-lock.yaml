@@ -10,10 +10,10 @@ devDependencies:
     version: 1.48.2
   '@sveltejs/adapter-auto':
     specifier: ^3.2.5
-    version: 3.2.5(@sveltejs/kit@2.7.3)
+    version: 3.2.5(@sveltejs/kit@2.11.1)
   '@sveltejs/kit':
     specifier: ^2.7.2
-    version: 2.7.3(@sveltejs/vite-plugin-svelte@4.0.3)(svelte@5.2.10)(vite@5.4.10)
+    version: 2.11.1(@sveltejs/vite-plugin-svelte@4.0.3)(svelte@5.2.10)(vite@5.4.10)
   '@sveltejs/vite-plugin-svelte':
     specifier: ^4.0.0
     version: 4.0.3(svelte@5.2.10)(vite@5.4.10)
@@ -1010,12 +1010,12 @@ packages:
     dev: true
     optional: true
 
-  /@sveltejs/adapter-auto@3.2.5(@sveltejs/kit@2.7.3):
+  /@sveltejs/adapter-auto@3.2.5(@sveltejs/kit@2.11.1):
     resolution: {integrity: sha512-27LR+uKccZ62lgq4N/hvyU2G+hTP9fxWEAfnZcl70HnyfAjMSsGk1z/SjAPXNCD1mVJIE7IFu3TQ8cQ/UH3c0A==}
     peerDependencies:
       '@sveltejs/kit': ^2.0.0
     dependencies:
-      '@sveltejs/kit': 2.7.3(@sveltejs/vite-plugin-svelte@4.0.3)(svelte@5.2.10)(vite@5.4.10)
+      '@sveltejs/kit': 2.11.1(@sveltejs/vite-plugin-svelte@4.0.3)(svelte@5.2.10)(vite@5.4.10)
       import-meta-resolve: 4.1.0
     dev: true
 
@@ -1047,24 +1047,24 @@ packages:
       - supports-color
     dev: true
 
-  /@sveltejs/kit@2.7.3(@sveltejs/vite-plugin-svelte@4.0.3)(svelte@5.2.10)(vite@5.4.10):
-    resolution: {integrity: sha512-Vx7nq5MJ86I8qXYsVidC5PX6xm+uxt8DydvOdmJoyOK7LvGP18OFEG359yY+aa51t6pENvqZAMqAREQQx1OI2Q==}
+  /@sveltejs/kit@2.11.1(@sveltejs/vite-plugin-svelte@4.0.3)(svelte@5.2.10)(vite@5.4.10):
+    resolution: {integrity: sha512-dAiHDEd+AOm20eYdMPV1a2eKBOc0s/7XsSs7PCoNv2kKS7BAoVRC9uzR+FQmxLtp8xuEo9z8CtrMQoszkThltQ==}
     engines: {node: '>=18.13'}
     hasBin: true
     requiresBuild: true
     peerDependencies:
-      '@sveltejs/vite-plugin-svelte': ^3.0.0 || ^4.0.0-next.1
+      '@sveltejs/vite-plugin-svelte': ^3.0.0 || ^4.0.0-next.1 || ^5.0.0
       svelte: ^4.0.0 || ^5.0.0-next.0
-      vite: ^5.0.3
+      vite: ^5.0.3 || ^6.0.0
     dependencies:
       '@sveltejs/vite-plugin-svelte': 4.0.3(svelte@5.2.10)(vite@5.4.10)
       '@types/cookie': 0.6.0
       cookie: 0.6.0
       devalue: 5.1.1
-      esm-env: 1.0.0
+      esm-env: 1.2.1
       import-meta-resolve: 4.1.0
       kleur: 4.1.5
-      magic-string: 0.30.12
+      magic-string: 0.30.15
       mrmime: 2.0.0
       sade: 1.8.1
       set-cookie-parser: 2.7.1
@@ -2032,6 +2032,10 @@ packages:
 
   /esm-env@1.2.0:
     resolution: {integrity: sha512-OhSQuHL3mUcaQHjGe8UMG8GsJIJHYYz0flR0h9fiTPNMupLMkb7TvcRD0EeJXW5a8GHBgfz08b6FDLNK7kkPQA==}
+    dev: true
+
+  /esm-env@1.2.1:
+    resolution: {integrity: sha512-U9JedYYjCnadUlXk7e1Kr+aENQhtUaoaV9+gZm1T8LC/YBAPJx3NSPIAurFOC0U5vrdSevnUJS2/wUVxGwPhng==}
     dev: true
 
   /espree@10.2.0:
